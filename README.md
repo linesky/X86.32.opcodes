@@ -1,2 +1,3 @@
-# X86.32.opcodes
-X86 opcodes 32 bits using assembler nasm by master of x86
+# visual.if
+
+is a code build to build serial if compares
