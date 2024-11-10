@@ -7,12 +7,12 @@ tttt="""
 yyyy="""
 
 int main(){
-    $MainApp$ m;
-    m.main();
+    Variantes v("");
+    v=Main();
     frees();
     return 0;
 }"""
-files=input("file java to convert? ")
+files=input("file javascript to convert? ")
 pfiles=files
 
 ill=files.find(".")
@@ -23,6 +23,8 @@ f1=open(files,"r")
 txts=f1.read()
 f1.close()
 txts=txts.replace("var ","Variantes ")
+txts=txts.replace("const ","Variantes ")
+txts=txts.replace("function ","Variantes ")
 txts=txts.replace("VAR ","Variantes ")
 txts=txts.replace("public static","public :static")
 txts=txts.replace("public class","class")

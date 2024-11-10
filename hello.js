@@ -1,11 +1,13 @@
-
-public class hello {
-    public static void main(String[] args) {
+function add(var a, var b){
+    var out=a+b;
+    return out;
+}
+function Main() {
         var f=10.9;
         f=f+"10";
         var s="hello world...";
         s=s+".......";
         console.log(s);
-        console.log(f);
-    }
+        console.log(f+10);
+        return f;
 }
