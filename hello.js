@@ -5,7 +5,7 @@ public class hello {
         f=f+"10";
         var s="hello world...";
         s=s+".......";
-        System.out.println(s);
-        System.out.println(f);
+        console.log(s);
+        console.log(f);
     }
 }

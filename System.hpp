@@ -1330,51 +1330,51 @@ class outs{
     protected :
         char c[4096];
     public : 
-        void println(const char *c){
+        void log(const char *c){
             puts(c);
         };
-        void println(Variantes c){
+        void log(Variantes c){
             puts(c.ToString());
         };
 
-        void println(String c){
+        void log(String c){
             puts(c.ToString());
         };
-        void println(string c){
+        void log(string c){
             puts(c.ToString());
         };
-        void println(Integer c){
+        void log(Integer c){
             puts(c.ToString());
         };
-        void println(Long c){
+        void log(Long c){
             puts(c.ToString());
         };
-        void println(){
+        void log(){
             puts("");
         };
-        void println(Float c){
+        void log(Float c){
             puts(c.ToString());
         };
-        void println(Double c){
+        void log(Double c){
             puts(c.ToString());
         };
-        void println(Int32 c){
+        void log(Int32 c){
             puts(c.ToString());
         };
-        void println(float c){
+        void log(float c){
             Float i(c);
             puts(i.ToString());
         };
-        void println(double c){
+        void log(double c){
             Double i(c);
             puts(i.ToString());
         };
-        void println(long c){
+        void log(long c){
             Long i(c);
             puts(i.ToString());
         };
 
-        void println(int c){
+        void log(int c){
             Int32 i(c);
             puts(i.ToString());
         };
@@ -1428,6 +1428,17 @@ class outs{
         };
 
 
+            
+        char *readLine(const char *c){
+            char ccc[4096];
+            char *c1=ccc;
+            printf(c);
+            fgets(ccc,4095,stdin);
+            return c1;
+        };
+
+
+
 
         
 
@@ -1450,13 +1461,13 @@ class inss{
 
 class Systems{
     public:
-        outs out;
-        inss console;
+        outs console;
+        inss in;
 };
 
 void frees(){
     long i=0;
     if (i>0)for (i=0;i<maxpagesss;i++)if( maxpagess[i]!=NULL)free( maxpagess[i]);
 }
-Consoles Console;
+outs console;
 Systems System;
